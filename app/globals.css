@@ -24,3 +24,50 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes crushedSlam {
+  0% {
+    transform: translateY(-200%) rotate(-12deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20%) rotate(-12deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-8%) rotate(-12deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-12deg);
+  }
+}
+
+@keyframes crushedFlash {
+  0%, 100% {
+    background-color: #dc2626; /* red-600 */
+  }
+  50% {
+    background-color: #f87171; /* red-400 */
+  }
+}
+
+.crushed-animate {
+  animation: crushedSlam 0.5s ease-out forwards, crushedFlash 0.4s ease-in-out 0.2s forwards;
+  background-color: #dc2626;
+}
+
+
+@keyframes finalbossGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(255, 255, 0, 0.7), 0 0 30px rgba(255, 100, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 1), 0 0 50px rgba(255, 50, 0, 0.8);
+  }
+}
+
+.animate-finalboss-glow {
+  animation: finalbossGlow 2.5s ease-in-out infinite;
+}
+

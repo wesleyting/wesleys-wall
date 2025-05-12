@@ -13,7 +13,17 @@ export default function Home() {
       image: "/images/bao.jpg",
       title: "20 Bao. 2 Minutes.",
       location: "Joe’s House (The Underground Arena)",
-      date: "May 2025 2025",
+      subtitle: "The walls are still steaming.",
+      date: "May 2025",
+    },
+    {
+      image: null, // or just leave this field out
+      title: "Forbidden Feast",
+      location: "Undisclosed Location",
+      subtitle: "12,000 calories. No witnesses. Only Prestige.",
+      date: "???",
+      isFinalBoss: true,
+      isLocked: true, // use this to change its look
     },
   ];
 
